@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nir Neuman - iOS Developer</title>
+    <style>
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 2em;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1,
+      p {
+        margin: 0;
+      }
+
+      h2 {
+        color: #0070c9;
+      }
+
+      .contact-info {
+        text-align: center;
+        margin-top: 2em;
+        font-size: 0.5em;
+      }
+
+      .contact-info a {
+        display: inline-block;
+        padding: 0.5em 1em;
+        background-color: #0070c9;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-right: 1em;
+        margin-bottom: 1em;
+      }
+
+      .project {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 1em;
+        margin-bottom: 1em;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* Ensures the box respects the content size */
+      }
+
+      .screenshots img {
+        width: 100%;
+        max-width: 200px; /* Adjust the max-width as needed */
+        height: auto;
+        border-radius: 5px;
+        margin-right: 1em; /* Add some margin between images */
+      }
+
+      .screenshots {
+        display: flex; /* Add this line to make children flex items */
+        flex-wrap: wrap; /* Allow items to wrap onto the next line if necessary */
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+      }
+
+      .project-icon {
+        max-width: 50px; /* Adjust the size as needed */
+        margin-right: 1em;
+        vertical-align: middle;
+      }
+
+      .separator {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-bottom: 1px solid #ddd;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      /* Apple-like button style */
+      .button {
+        display: inline-block;
+        padding: 0.5em 1em;
+        background-color: #0070c9;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: #00588a;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Nir Neuman</h1>
+      <p>iOS Developer</p>
+
+      <div class="contact-info">
+        <a class="button" href="mailto:nir.neuman@icloud.com">Email</a>
+        <a
+          class="button"
+          href="https://linkedin.com/in/nirneu/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          class="button"
+          href="https://github.com/nirneu"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+      </div>
+    </header>
+
+    <section>
+      <h2 style="padding-left: 0.5em">Projects</h2>
+      <div class="project">
+        <div style="display: flex; align-items: center">
+          <img class="project-icon" src="180.png" alt="TagAuto Icon" />
+          <h3>TagAuto</h3>
+        </div>
+        <p>
+          Never lose your car again! TagAuto simplifies parking—save your spot,
+          share with family or groups. Stress-free journeys await!
+        </p>
+        <div class="screenshots">
+          <img src="6.7-inch Screenshot 1.jpg" alt="TagAuto App Screenshot" />
+          <img src="6.7-inch Screenshot 2.jpg" alt="TagAuto App Screenshot" />
+          <img src="6.7-inch Screenshot 3.jpg" alt="TagAuto App Screenshot" />
+          <img src="6.7-inch Screenshot 4.jpg" alt="TagAuto App Screenshot" />
+        </div>
+      </div>
+
+      <!-- Add more projects as needed -->
+    </section>
+
+    <footer>&copy; 2023 Nir Neuman</footer>
+  </body>
+</html>
