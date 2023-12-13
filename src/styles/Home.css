@@ -17,10 +17,10 @@
     color: #f0f0f0;
   }
 
-  .about .profilePicture {
-    border-radius: 50%;
-    width: 350px;
-  }
+    .about .profilePicture {
+      border-radius: 50%;
+      width: 350px;
+    }
   
   .about h2 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -42,7 +42,7 @@
   }
   
   .skills {
-    font-size: 25px;
+    font-size: 30px;
     width: 100%;
     display: flex;
     justify-content: center;

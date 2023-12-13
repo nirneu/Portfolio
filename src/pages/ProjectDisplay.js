@@ -7,15 +7,33 @@ import "../styles/ProjectDisplay.css";
 function ProjectDisplay() {
   const { id } = useParams();
   const project = ProjectList[id];
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <div className="project">
-      <h1>{project.name}</h1>
       <img src={project.image} />
+      <h1>{project.name}</h1>
+      <p>
+        <b>{project.subtitle}</b>
+      </p>
+      <div className="screenshotsContainer">
+        {project.screenshots.map((screenshot, index) => (
+          <img key={index} src={screenshot} className="screenshot" />
+        ))}
+      </div>
       <p>
         <b>Skills:</b> {project.skills}
       </p>
-      <GitHubIcon />
+      <a
+        href="https://github.com/nirneu/TagAuto"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => openInNewTab("https://github.com/nirneu/TagAuto")}
+      >
+        <GitHubIcon />
+      </a>
     </div>
   );
 }
