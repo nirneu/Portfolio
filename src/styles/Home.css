@@ -2,7 +2,7 @@
     width: 100%;
     align-items: center;
     font-family: "Arial", sans-serif;
-    color: #3e497a;
+    color: #000000;
   }
   
   .about {
@@ -13,29 +13,36 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #21325e;
+    background-color: #000000;
     color: #f0f0f0;
+  }
+
+  .about .profilePicture {
+    border-radius: 50%;
+    width: 350px;
   }
   
   .about h2 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 80px;
-    color: #e9d35b;
+    color: #f0f0f0;
     height: 50px;
+    margin-top: 10px;
   }
   
   .about .prompt {
     width: 40%;
     font-size: 30px;
   }
+
   .prompt svg {
     font-size: 60px;
     margin: 5px;
-    color: white;
+    color: #f0f0f0;
   }
   
   .skills {
-    font-size: 35px;
+    font-size: 25px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -44,12 +51,13 @@
   }
   
   .skills h1 {
-    color: #3e497a;
+    color: #000000;
   }
   
   .skills .list {
     list-style: none;
     width: 60%;
+    margin-top: -10px;
   }
   
   .list span {
@@ -59,13 +67,19 @@
   @media only screen and (max-width: 600px) {
     .about h2 {
       font-size: 40px;
+      margin-top: 30px;
     }
   
     .about .prompt {
-      margin-top: 10px;
+      margin-top: 0px;
       font-size: 20px;
       width: 80%;
     }
+
+    .about .profilePicture {
+      border-radius: 50%;
+      width: 250px;
+    } 
   
     .skills {
       text-align: center;
