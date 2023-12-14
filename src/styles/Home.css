@@ -65,6 +65,11 @@
   }
   
   @media only screen and (max-width: 600px) {
+
+    .about {
+      justify-content: start;
+    }
+
     .about h2 {
       font-size: 40px;
       margin-top: 30px;
