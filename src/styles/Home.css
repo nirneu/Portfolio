@@ -19,7 +19,7 @@
 
     .about .profilePicture {
       border-radius: 50%;
-      width: 350px;
+      width: 300px;
     }
   
   .about h2 {
@@ -42,7 +42,7 @@
   }
   
   .skills {
-    font-size: 30px;
+    font-size: 25px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@
 
     .about .profilePicture {
       border-radius: 50%;
-      width: 250px;
+      width: 200px;
     } 
   
     .skills {
@@ -89,6 +89,6 @@
     }
   
     .skills h2 {
-      font-size: 30px;
+      font-size: 25px;
     }
   }
