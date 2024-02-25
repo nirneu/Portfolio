@@ -27,11 +27,10 @@ function ProjectDisplay() {
         <b>Skills:</b> {project.skills}
       </p>
       <a
-        href="https://github.com/nirneu/TagAuto"
+        href={project.gitHub}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => openInNewTab("https://github.com/nirneu/TagAuto")}
-      >
+        onClick={() => openInNewTab(project.gitHub)}>
         <GitHubIcon />
       </a>
     </div>
