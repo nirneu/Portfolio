@@ -7,20 +7,28 @@ import "../styles/ProjectDisplay.css";
 function ProjectDisplay() {
   const { id } = useParams();
   const project = ProjectList[id];
+
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
     <div className="project">
-      <img src={project.image} />
+      {/* Provide a meaningful description in the alt attribute */}
+      <img src={project.image} alt={`Main image for ${project.name}`} />
       <h1>{project.name}</h1>
       <p>
         <b>{project.subtitle}</b>
       </p>
       <div className="screenshotsContainer">
         {project.screenshots.map((screenshot, index) => (
-          <img key={index} src={screenshot} className="screenshot" />
+          // Use the index to provide a unique alt text for each screenshot
+          <img
+            key={index}
+            src={screenshot}
+            alt={`Screenshot ${index + 1} of ${project.name}`}
+            className="screenshot"
+          />
         ))}
       </div>
       <p>

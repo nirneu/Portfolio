@@ -13,7 +13,12 @@ function Home() {
   return (
     <div className="home">
       <div className="about">
-        <img src={ProfilePicture} className="profilePicture" />
+        {/* Add alt attribute to img element */}
+        <img
+          src={ProfilePicture}
+          alt="Nir Neuman's Profile"
+          className="profilePicture"
+        />
         <h2>Nir Neuman</h2>
         <div className="prompt">
           <p>iOS Developer, Full Stack Developer</p>
