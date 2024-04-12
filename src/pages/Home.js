@@ -1,7 +1,7 @@
 import React from "react";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from "@material-ui/icons/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 import "../styles/Home.css";
 import ProfilePicture from "../assets/ProfilePicture.png";
 
@@ -21,8 +21,7 @@ function Home() {
             href="https://linkedin.com/in/nirneu"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => openInNewTab("https://linkedin.com/in/nirneu")}
-          >
+            onClick={() => openInNewTab("https://linkedin.com/in/nirneu")}>
             <LinkedInIcon />
           </a>
           <a href="mailto:nir.neuman@icloud.com">
@@ -32,8 +31,7 @@ function Home() {
             href="https://github.com/nirneu"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => openInNewTab("https://github.com/nirneu")}
-          >
+            onClick={() => openInNewTab("https://github.com/nirneu")}>
             <GitHubIcon />
           </a>
         </div>

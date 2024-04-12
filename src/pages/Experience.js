@@ -4,9 +4,9 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import SchoolIcon from "@material-ui/icons/School";
-import WorkIcon from "@material-ui/icons/Work";
-import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
+import SchoolIcon from "@mui/icons-material/School";
+import WorkIcon from "@mui/icons-material/Work";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 
 function Experience() {
   return (
@@ -16,8 +16,7 @@ function Experience() {
           className="vertical-timeline-element--work"
           date="2023 - present"
           iconStyle={{ background: "#000000", color: "#f0f0f0" }}
-          icon={<PersonOutlineIcon />}
-        >
+          icon={<PersonOutlineIcon />}>
           <h3 className="vertical-timeline-element-title">iOS Developer</h3>
           <h4 className="vertical-timeline-element-subtitle">Self Employed</h4>
           <p>
@@ -32,8 +31,7 @@ function Experience() {
           className="vertical-timeline-element--work"
           date="2021 - 2023"
           iconStyle={{ background: "#000000", color: "#f0f0f0" }}
-          icon={<WorkIcon />}
-        >
+          icon={<WorkIcon />}>
           <h3 className="vertical-timeline-element-title">
             Senior Full Stack Developer
           </h3>
@@ -49,8 +47,7 @@ function Experience() {
           className="vertical-timeline-element--education"
           date="2018 - 2021"
           iconStyle={{ background: "#f0f0f0", color: "#000000" }}
-          icon={<SchoolIcon />}
-        >
+          icon={<SchoolIcon />}>
           <h3 className="vertical-timeline-element-title">
             B.Sc - Computer Science with specialization in Mobile and Web
             development
@@ -64,8 +61,7 @@ function Experience() {
           className="vertical-timeline-element--work"
           date="2017 - 2021"
           iconStyle={{ background: "#000000", color: "#f0f0f0" }}
-          icon={<WorkIcon />}
-        >
+          icon={<WorkIcon />}>
           <h3 className="vertical-timeline-element-title">
             Full Stack Developer
           </h3>
@@ -80,8 +76,7 @@ function Experience() {
           className="vertical-timeline-element--education"
           date="2017"
           iconStyle={{ background: "#f0f0f0", color: "#000000" }}
-          icon={<SchoolIcon />}
-        >
+          icon={<SchoolIcon />}>
           <h3 className="vertical-timeline-element-title">
             Mamram Programming Course
           </h3>
