@@ -14,19 +14,19 @@ function ProjectDisplay() {
 
   return (
     <div className="project">
-      {/* Provide a meaningful description in the alt attribute */}
-      <img src={project.image} alt={`Main image for ${project.name}`} />
+      {/* Updated alt text to remove redundant words */}
+      <img src={project.image} alt={`${project.name}`} />
       <h1>{project.name}</h1>
       <p>
         <b>{project.subtitle}</b>
       </p>
       <div className="screenshotsContainer">
         {project.screenshots.map((screenshot, index) => (
-          // Use the index to provide a unique alt text for each screenshot
+          // Updated alt text to remove redundant words and provide context
           <img
             key={index}
             src={screenshot}
-            alt={`Screenshot ${index + 1} of ${project.name}`}
+            alt={`Screenshot ${index + 1} for ${project.name}`}
             className="screenshot"
           />
         ))}
