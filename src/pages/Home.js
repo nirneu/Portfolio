@@ -14,14 +14,10 @@ function Home() {
     <div className="home">
       <div className="about">
         {/* Add alt attribute to img element */}
-        <img
-          src={ProfilePicture}
-          alt="Nir Neuman's Profile"
-          className="profilePicture"
-        />
-        <h2>Nir Neuman</h2>
+        <img src={ProfilePicture} alt="Nir Neuman's Profile" className="profilePicture" />
+        <h2>Nir Nils Neuman</h2>
         <div className="prompt">
-          <p>iOS Developer, Full Stack Developer</p>
+          <p>Full Stack Developer, iOS Developer</p>
           <a
             href="https://linkedin.com/in/nirneu"
             target="_blank"
@@ -45,28 +41,24 @@ function Home() {
         <h1>Skills</h1>
         <ol className="list">
           <li className="item">
-            <h2>iOS Development</h2>
+            <h2>Full Stack Development</h2>
             <span>
-              Swift, SwiftUI, UIKit, Cocoa Touch, Core Data, Combine, MVVM,
-              Xcode
+              JavaScript, TypeScript, React, Angular, Node.js, Express, PostgreSQL, MongoDB
             </span>
           </li>
           <li className="item">
-            <h2>Full Stack Development</h2>
-            <span>
-              JavaScript, TypeScript, Angular, Node.js, Express, PostgreSQL
-            </span>
+            <h2>iOS Development</h2>
+            <span>Swift, SwiftUI, UIKit, Core Data, Combine, MVVM, Xcode</span>
           </li>
           <li className="item">
             <h2>Other</h2>
             <span>
-              Object-Oriented Programming, RESTful APIs, Firebase, Azure Cloud,
-              Git, Scrum, UI/UX
+              Object-Oriented Programming, RESTful APIs, Firebase, Azure Cloud, Git, Scrum, UI/UX
             </span>
           </li>
           <li className="item">
             <h2>Languages</h2>
-            <span>English, Hebrew, Swedish</span>
+            <span>English, Hebrew, German, Swedish</span>
           </li>
         </ol>
       </div>
